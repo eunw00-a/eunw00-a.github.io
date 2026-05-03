@@ -22,4 +22,4 @@ HTML, CSS, JavaScript, Jekyll을 배우며
 
 평소 전공 탐색을 위해 자주 이용하는 사이트는 [전공위키](https://snuclscommunity.oopy.io/majorwiki)입니다.
 
-<script src="/assets/img/js/hello.js"></script>
+<script src="/assets/js/hello.js"></script>
