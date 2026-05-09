@@ -21,3 +21,22 @@ const years = [1908, 1936, 1972, 2025];
 for (year of years) {
     console.log(`${year}년: ${classifyEra(year)}`)
 }
+
+// Q2
+const works = ["날개", "오감도", "지주회시", "종생기", "권태"];
+
+console.log(works.length);
+console.log(works[0]);
+console.log(works[works.length - 1]);
+
+const titled = works.map(work => `「${work}」`);
+console.log(titled);
+
+const long = works.filter(work => work.length >= 3);
+console.log(long)
+
+let n = 1;
+for (const work of long) {
+    console.log(`${n}번째 작품: ${work}`);
+    n++;
+}
