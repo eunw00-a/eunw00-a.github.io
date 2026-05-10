@@ -64,7 +64,7 @@ const counts = targets.map(t => countChar(text, t))
 console.log(counts)
 
 for (let i=0; i < targets.length; i++) {
-    console.log(`'${targets[i]}': ${counts[i]}`);
+    console.log(`'${targets[i]}': ${counts[i]}번`);
 }
 
 const frequent = targets.filter(t => countChar(text, t) >= 2);
