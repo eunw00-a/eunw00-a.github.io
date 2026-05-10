@@ -19,7 +19,7 @@ function classifyEra(year) {
 
 const years = [1908, 1936, 1972, 2025];
 for (const year of years) {
-    console.log(`${year}년: ${classifyEra(year)}`)
+    console.log(`${year}년: ${classifyEra(year)}`);
 }
 
 // Q2
@@ -60,8 +60,8 @@ console.log(`"banana"에서 'a'는 ${countChar("banana", "a")}번 등장합니�
 const text = "이상의 「날개」는 1936년에 발표된 단편소설이다.";
 const targets = ["이", "의", "날", "개", "소"];
 
-const counts = targets.map(t => countChar(text, t))
-console.log(counts)
+const counts = targets.map(t => countChar(text, t));
+console.log(counts);
 
 for (let i=0; i < targets.length; i++) {
     console.log(`'${targets[i]}': ${counts[i]}번`);
