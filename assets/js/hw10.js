@@ -18,7 +18,7 @@ function classifyEra(year) {
 } 
 
 const years = [1908, 1936, 1972, 2025];
-for (year of years) {
+for (const year of years) {
     console.log(`${year}년: ${classifyEra(year)}`)
 }
 
@@ -54,4 +54,26 @@ function countChar(text, target) {
 
 console.log(`"박씨는 이씨에게 시집간 김씨의 외사촌 동생이다."에서 '씨'는 ${countChar("박씨는 이씨에게 시집간 김씨의 외사촌 동생이다.", "씨")}번 등장합니다.`);
 console.log(`"이상의 「날개」는 1936년 작품이다."에서 '이'는 ${countChar("이상의 「날개」는 1936년 작품이다.", "이")}번 등장합니다.`);
-console.log(`"banana"에서 'a'는 ${countChar("banana", "a")}번 등장합니다.`)
+console.log(`"banana"에서 'a'는 ${countChar("banana", "a")}번 등장합니다.`);
+
+// Q4
+const text = "이상의 「날개」는 1936년에 발표된 단편소설이다.";
+const targets = ["이", "의", "날", "개", "소"];
+
+const counts = targets.map(t => countChar(text, t))
+console.log(counts)
+
+for (let i=0; i < targets.length; i++) {
+    console.log(`'${targets[i]}': ${counts[i]}`);
+}
+
+const frequent = targets.filter(t => countChar(text, t) >= 2);
+console.log(frequent);
+
+let maxIdx=0;
+for (let i=1; i<counts.length; i++) {
+    if (counts[i] > counts[maxIdx]) {
+        maxIdx=i;
+    }
+}
+console.log( `가장 자주 나온 글자: '${targets[maxIdx]}' (${counts[maxIdx]}번)`);
