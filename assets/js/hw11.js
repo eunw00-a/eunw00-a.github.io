@@ -9,7 +9,9 @@ themeBtn.addEventListener("click", () => {
     if (box.classList.contains("dark")) {
         themeBtn.textContent="라이트 모드";
     }
-    else {themeBtn.textContent="다크 모드";}
+    else {
+        themeBtn.textContent="다크 모드";
+    }
  });
 
  // Q2
@@ -23,5 +25,7 @@ input.addEventListener("input", (e) => {
         warn.textContent = "100자를 넘었습니다.";
         warn.style.color = "crimson";
     }
-    else {warn.textContent = ""}
+    else {
+        warn.textContent = "";
+    }
 });
