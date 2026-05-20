@@ -12,3 +12,4 @@ new Chart(canvas, {
         ],
     },
 })
+
