@@ -43,7 +43,7 @@ function drawChart(rows) {
             },
             scales: {
                 x: {title: {display: true, text: "작가"}},
-                y: {beginatZero: true, title: {display: true, text: "편수"}},
+                y: {beginAtZero: true, title: {display: true, text: "편수"}},
             }
         }
     });
