@@ -36,5 +36,15 @@ function drawChart(rows) {
                 ]
             }],
         },
+        options: {
+            plugins: {
+                title: {display: true, text: "작가별 작품 편수"},
+                legend: {display: true},
+            },
+            scales: {
+                x: {title: {display: true, text: "작가"}},
+                y: {beginatZero: true, title: {display: true, text: "편수"}},
+            }
+        }
     });
 }
