@@ -62,8 +62,10 @@ Promise.all([
     fetch("/data/frankenstein.txt").then(r => r.text()),
     fetch("/data/dracula.txt").then(r => r.text()),
     fetch("/data/stopwords-en.txt").then(r => r.text()),
-]).then(([frankText, dracText, stopText]) => {
-    const stopwords = stopText.split(/\s+/).filter(w => w.length > 0)
+]).then(([frankText, dracText, baseStop, customStop]) => {
+    const stopwords = (baseStop + "\n" + customStop)
+        .split(/\s+/)
+        .filter(w => w.length > 0);
 
     function analyze(text, stopwords) {
         const body = extractBody(text);
