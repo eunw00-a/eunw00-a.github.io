@@ -73,12 +73,12 @@ Promise.all([
         const words = getWords(body);
         const cleaned = removeStopwords(words, stopwords);
         const counts = countWords(cleaned);
-    return topN(counts, 30);
+        return topN(counts, 30);
     }
 
     const frankTop = analyze(frankText, stopwords);
     const dracTop = analyze(dracText, stopwords);
 
-    drawChart("#chart-frankenstein", frankTop, "rgba(40, 167, 69, 0.6)"),
-    drawChart("#chart-dracula", dracTop, "rgba(220, 53, 69, 0.6)")
+    drawChart("#chart-frankenstein", frankTop, "rgba(40, 167, 69, 0.6)");
+    drawChart("#chart-dracula", dracTop, "rgba(220, 53, 69, 0.6)");
 });
