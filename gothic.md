@@ -1,10 +1,10 @@
 ---
 layout: page
-title: [숙제13] 텍스트 분석 도구 구현
+title: 텍스트 분석 도구 구현
 permalink: /gothic/
 ---
 
-# [숙제13] 텍스트 분석 도구 구현
+# 텍스트 분석 도구 구현
 
 <!-- Q1: 두 고딕 소설의 상위 30개 단어 비교 -->
 <h2>Frankenstein vs. Dracula -- 상위 30개 단어</h2>
