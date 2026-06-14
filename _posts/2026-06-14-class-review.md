@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "학기 프로젝트 회고"
-date: 2026-06-14 17:40:00 +0900
+date: 2026-06-14 17:54:00 +0900
 categories: [수업]
-tags: [jekyll]
+tags: [프로젝트리뷰]
 ---
 
 # 무엇을 만들었나
